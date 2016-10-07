@@ -20,7 +20,7 @@ let fibo_0 = 0,
 let concat = fibo_0 + ", " + fibo_1 + ", ";
 
 do {
-    let inputtedNumber = Number(window.prompt("Type a number you think it's in the fibonacci sequence:"));
+    inputtedNumber = Number(window.prompt("Type a number you think it's in the fibonacci sequence:"));
 } while (isNaN(inputtedNumber) || inputtedNumber < 0);
 
 while ((fibo_0 + fibo_1) < inputtedNumber) {
