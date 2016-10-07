@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 2a </title>
+    <meta charset="utf-8" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet" type="text/css" />
+    <!-- Other stylesheets may go here -->
+    <link href="http://mylinux.langara.bc.ca/~bgreen/201530/1045/lecs/Lab1Formatted.css" rel="stylesheet" type="text/css" />
+    <!-- Any citations should go here -->
+</head>
+
+<body>
+    <main>
+        <h1>Alexandre Bertuol</h1>
+        <article>
+            <h2>Question 0:</h2>
+            <section class="question">
+                <p> Evaluate the following expression: 7 * 42 &lt;= 300 - 12 </p>
+                <!-- &gt; ⇒ < -->
+            </section>
+            <section class="answer">
+                <p><b>Step-by-step evaluation:</b>
+                    <br> 294 &lt;= 300 - 12
+                    <br> 294 &lt;= 288
+                    <br> false
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Question 1:</h2>
+            <section class="question">
+                <p> Evaluate the following expression:
+                    <br> true || false &amp;&amp; true</p>
+            </section>
+            <section class="answer">
+                <p><b>Step-by-step evaluation:</b>
+                    <br> true || false &amp;&amp; true
+                    <br> true || false
+                    <br> true
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Question 2:</h2>
+            <section class="question">
+                <p> Assuming the following statements are executed before the expression
+                    <br> let a = 21;
+                    <br> a = a + 3;
+                    <br> let b = 5;
+                    <br> b = a - b;
+                    <br> Evaluate the following expression:
+                    <br> (a &gt; 1) || (b &lt;= 1) &amp;&amp; (a != b)</p>
+            </section>
+            <section class="answer">
+                <table>
+                    <tr>
+                        <th colspan="2">Variable Values </th>
+
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>b</td>
+                        <td>19</td>
+                    </tr>
+                </table>
+                <p><b>Step-by-step evaluation:</b>
+                    <br> (24 &gt; 1) || (19 &lt;= 1) &amp;&amp; (24 != 19)
+                    <br> true || false &amp;&amp; true
+                    <br> true || false
+                    <br> true
+                </p>
+            </section>
+        </article>
+        <article>
+            <h2>Question 3:</h2>
+            <section class="question">
+                <p> Assuming the following variable declarations
+                    <br> let name = "alligator"
+                    <br> let escape = "boat"
+                    <br>
+                    <br>Evaluate the following expression:
+                    <br>"The " + pet + " escaped. It was last seen on a " + escape + "!"
+                </p>
+            </section>
+            <section class="answer">
+                <table>
+                    <tr>
+                        <th colspan="2">Variable Values </th>
+                    </tr>
+                    <tr>
+                        <td>pet:</td>
+                        <td>"alligator"</td>
+                    </tr>
+                    <tr>
+                        <td>escape:</td>
+                        <td>"boat"</td>
+                    </tr>
+                </table>
+                <p><b>Step-by-step evaluation:</b>
+                    <br> "The " + pet + " escaped. It was last seen on a " + escape + "!"
+                    <br> "The alligator escaped. It was last seen on a boat!"
+                </p>
+            </section>
+        </article>
+        <article>
+            <h2>Question 4:</h2>
+            <section class="question">
+                <p> Assuming the following variable declarations
+                    <br> let name = "orge"
+                    <br> let nickname = "Conqueror"
+                    <br> let combinedName = name + " " + nickname;
+                    <br> Evaluate the following expression:
+                    <br> combinedName + "!" + name + " simons" </p>
+            </section>
+            <section class="answer">
+                <table>
+                    <tr>
+                        <th colspan="2">Variable Values </th>
+
+                    </tr>
+                    <tr>
+                        <td>name:</td>
+                        <td>"orge"</td>
+                    </tr>
+                    <tr>
+                        <td>nickname:</td>
+                        <td>"Conqueror"</td>
+                    </tr>
+                    <tr>
+                        <td>combinedName:</td>
+                        <td>"orge Conqueror"</td>
+                    </tr>
+                </table>
+                <p><b>Step-by-step evaluation:</b>
+                    <br> combinedName + " ! " + name + " simons"
+                    <br> "orge Conqueror" + " ! " + "orge" + " simons"
+                    <br> "orge Conqueror ! orge simons"
+                </p>
+            </section>
+        </article>
+        <article>
+            <h2>Question 5:</h2>
+            <section class="question">
+                <p>Evaluate the following expression:
+                    <br>
+                    <br> ((42 === "42") &amp;&amp; (42 == "42")) ||
+                    <br> ((42 &lt; "Whistle") || (42 &gt; "234"))
+                </p>
+            </section>
+            <section class="answer">
+                <p><b>Step-by-step evaluation:</b>
+                    <br> (42 === "42") &amp;&amp; (42 == "42")) || ((42 &lt; "Whistle") || (42 &gt; "234"))
+                    <br> false &amp;&amp; true || false || false
+                    <br> false || false || false
+                    <br> false
+                </p>
+            </section>
+        </article>
+        <article>
+            <h2>Question 6:</h2>
+            <section class="question">
+                <p> Peter bought 5kg of apple at a price of $1.49/pound.How much did he pay?
+                </p>
+            </section>
+            <section class="answer">
+                <p> 1kg -&gt; 2.20462 pounds
+                    <br> 5kg -&gt; 11.0231 pounds
+                    <br> 11.0231 * 1.49 = <b>$16.42</b>
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Question 7:</h2>
+            <section class="question">
+                <p> The amount of charge that travels through a <a href="https://en.wikipedia.org/wiki/Lightning"> lightning bolt</a> is typically around 15 Coulombs. By definition one coulomb is the magnitude of electrical charge in 6.24150934×10<sup>18</sup> protons or electrons. How many electrons are involved in a typical bolt of lightning? Would that hurt?
+                </p>
+            </section>
+            <section class="answer">
+                <p> <b>Step-by-step evaluation:</b>
+                    <br> 15 * 6.24150934 * 10<sup>18</sup>
+                    <br> 93.6226401 * 10<sup>18</sup>
+                    <br> 9.36226401 * 10<sup>19</sup> electrons
+                    <br>
+                    <br> According to <a href="https://www.quora.com/How-powerful-is-the-charge-of-1-coulomb">Quora</a> one Coulomb is "over 2 tonnes of TNT's worth of explosive energy", multiplying by 15 that would give you 30tonnes of TNT's explosive energy. Kills.
+                </p>
+
+            </section>
+        </article>
+
+        <!-- place your HTML code within the main -->
+
+    </main>
+</body>
+
+</html>
